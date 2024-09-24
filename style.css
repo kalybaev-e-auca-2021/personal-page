@@ -1,0 +1,52 @@
+body {
+    font-family: Arial;
+}
+
+#header {
+    background-color: dimgray;
+    height: 2.5rem;
+    border-bottom: 2rem solid lightseagreen;
+}
+
+* {
+    margin: 0;
+}
+
+#title {
+    height: 25.5rem;
+    background-color: lightgray;
+    text-align: center;
+}
+
+#fav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#about {
+    display: flex;
+    height: 24.5rem;
+}
+
+h3 {
+    color: lightblue;
+    width: 10rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#about h3 {
+    width: 10rem;
+    margin: 0 auto;
+}
+
+* {
+    font-family: 'Gill Sans';
+    margin: 0;
+}
