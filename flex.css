@@ -22,13 +22,25 @@ body {
     background-color: lightblue;
     font-size: 10rem;
     color: blue;
-    border: 2px dashed blue;
+    border: 3px dashed blue;
+    height: 200px;
     flex-basis: 262px;
 }
 
+.box1 {
+    flex-grow: 1;
+}
+
 .box2,
-.box3,
+.box3 {
+    flex-grow: 100;
+}
+
 .box5 {
+    flex-grow: 22;
+}
+
+.box6 {
     flex-grow: 1;
 }
 
