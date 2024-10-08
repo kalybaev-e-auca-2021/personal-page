@@ -37,8 +37,6 @@
 }
 
 .container>* {
-    display: flex;
-    flex-direction: column;
     border: 2px solid firebrick;
     flex-basis: 200px;
     flex-grow: 1;
@@ -96,7 +94,6 @@
 ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
     gap: 10px;
     list-style-type: none;
 }
