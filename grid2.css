@@ -1,0 +1,10 @@
+.container>* {
+    max-width: 1400px;
+    background-color: lightblue;
+    font-size: 6rem;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+}
