@@ -1,10 +1,104 @@
-.container>* {
-    max-width: 1400px;
-    background-color: lightblue;
-    font-size: 6rem;
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    max-width: 1143px;
+    min-height: 1583px;
+    font-size: 2rem;
+    opacity: 0.5;
+    color: red;
 }
 
 .container {
     display: grid;
+    grid-template-rows:
+        minmax(114px, auto) minmax(35px, auto) minmax(135px, auto) minmax(105px,
+            auto) minmax(445px, auto) minmax(460px, auto) minmax(288px, auto);
+    grid-template-columns: minmax(20px, 572px) minmax(20px, 305px) minmax(20px,
+            266px);
+    grid-template-areas:
+        "one one one"
+        "two two two"
+        "three three three"
+        "four four four"
+        "five five eight"
+        "six nine nine"
+        "seven seven seven";
+}
+
+.box1 {
+    grid-area: one;
+}
+
+.box2 {
+    grid-area: two;
+    background-color: #00587a;
+    padding: 10px 20px;
+    display: flex;
+}
+
+.box3 {
+    grid-area: three;
+}
+
+.box4 {
+    grid-area: four;
+}
+
+.box5 {
+    grid-area: five;
+}
+
+.box6 {
+    grid-area: six;
+}
+
+.box7 {
+    grid-area: seven;
+}
+
+.box8 {
+    grid-area: eight;
+}
+
+.box9 {
+    grid-area: nine;
+}
+
+.box10 {
+    grid-area: ten;
+}
+
+.container>* {
+    border: 2px dashed red;
+}
+
+.box2 ul {
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 1rem;
+    color: white;
+    list-style: none;
+}
+
+.box2 li {
+    color: white;
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six";
+    }
 }
