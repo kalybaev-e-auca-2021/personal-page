@@ -28,7 +28,6 @@ body {
 }
 
 ul {
-    padding-top: 9px;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -40,6 +39,7 @@ ul {
     font-weight: bold;
     color: white;
     max-width: 1140px;
+    min-height: 100%;
     margin: 0 auto;
 }
 
