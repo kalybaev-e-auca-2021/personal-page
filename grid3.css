@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -73,26 +74,22 @@ body {
     border: 2px dashed red;
 }
 
-.insideBox2 {
-    background-color: #00587a;
-    border-radius: 8px;
-    max-width: 200px;
-}
-
-.insideBox2>ul>li {
+li {
     border-bottom: 1px solid white;
 }
 
-.insideBox2 ul {
+ul {
     display: flex;
     flex-wrap: wrap;
+    list-style-type: none;
+    background-color: #00587a;
     flex-direction: column;
-    gap: 20px;
     font-family: "Tahoma";
     font-size: 13px;
+    gap: 20px;
+    padding: 10px;
     font-weight: bold;
     color: white;
-    list-style: none;
 }
 
 @media (max-width: 500px) {

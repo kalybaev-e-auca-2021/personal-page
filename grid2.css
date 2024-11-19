@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -13,7 +14,7 @@ body {
 .container {
     display: grid;
     grid-template-rows:
-        minmax(112px, auto) minmax(34px, auto) minmax(132px, auto) minmax(83px, auto) minmax(469px, auto) minmax(458px, auto) minmax(290px, auto);
+        minmax(112px, auto) minmax(36px, auto) minmax(132px, auto) minmax(83px, auto) minmax(469px, auto) minmax(458px, auto) minmax(290px, auto);
     grid-template-columns:
         minmax(20px, 642px) minmax(20px, 290px) minmax(20px, 349px);
     grid-template-areas:
@@ -24,6 +25,35 @@ body {
         "five five eight"
         "six nine nine"
         "seven seven seven";
+}
+
+ul {
+    padding-top: 9px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    background-color: #00587a;
+    align-items: center;
+    font-family: "Tahoma";
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six";
+    }
 }
 
 .box1 {
@@ -70,39 +100,49 @@ body {
     border: 2px dashed red;
 }
 
-.insideBox2 {
-    background-color: #00587a;
-    padding: 7px 22px;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
+.Vlast {
+    flex-basis: 90px;
+    padding-left: 21px;
 }
 
-
-.insideBox2 ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
-    font-family: "Tahoma";
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: flex-start;
+.Obshestvo {
+    flex-basis: 90px;
 }
 
-@media (max-width: 500px) {
-    .container {
-        grid-template-columns: 100%;
-        grid-template-areas:
-            "one"
-            "two"
-            "three"
-            "four"
-            "five"
-            "six";
-    }
+.Ekonomika {
+    flex-basis: 100px;
+}
+
+.Proisshestviya {
+    flex-basis: 100px;
+}
+
+.Agent {
+    padding-left: 25px;
+    flex-basis: 100px;
+}
+
+.Sport {
+    flex-basis: 78px;
+    padding-left: 15px;
+}
+
+.Technoblock {
+    flex-basis: 94px;
+}
+
+.SpecProject {
+    flex-basis: 115px;
+}
+
+.Kyrgyz {
+    flex-basis: 90px;
+}
+
+.English {
+    flex-basis: 70px;
+}
+
+.Business {
+    flex-basis: 20px;
 }
