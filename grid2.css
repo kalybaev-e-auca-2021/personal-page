@@ -71,8 +71,8 @@ body {
 }
 
 .insideBox2 {
-    background-color: #00587a;
-    padding: 8px 21px;
+    /* background-color: #00587a; */
+    padding: 7px 22px;
     border-radius: 8px;
     width: 100%;
     max-width: 1140px;
@@ -83,9 +83,9 @@ body {
 .insideBox2 ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 19px;
+    gap: 18px;
     font-family: "Tahoma";
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     color: white;
     list-style: none;
