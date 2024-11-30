@@ -32,7 +32,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    background-color: #00587a;
+    /* background-color: #00587a; */
     align-items: center;
     font-family: "Tahoma";
     font-size: 13px;
