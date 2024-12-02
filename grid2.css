@@ -12,7 +12,6 @@ body {
     background-repeat: no-repeat;
     font-size: 2rem;
     opacity: 0.5;
-    color: red;
 }
 
 .container {
@@ -36,10 +35,10 @@ ul {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    background-color: #00587a;
+    /* background-color: #00587a; */
     align-items: center;
     font-family: "Tahoma";
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     color: white;
     max-width: 1140px;
@@ -79,6 +78,11 @@ ul {
 
 .Hero {
     grid-area: five;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
 }
 
 .box6 {
@@ -106,12 +110,13 @@ ul {
 }
 
 .Vlast {
-    flex-basis: 90px;
+    flex-basis: 88px;
     padding-left: 21px;
+    font-size: 13px;
 }
 
 .Obshestvo {
-    flex-basis: 90px;
+    flex-basis: 92px;
 }
 
 .Ekonomika {
@@ -123,25 +128,28 @@ ul {
 }
 
 .Agent {
-    padding-left: 25px;
+    padding-left: 16px;
     flex-basis: 100px;
 }
 
 .Sport {
-    flex-basis: 78px;
-    padding-left: 15px;
+    flex-basis: 71px;
+    padding-left: 7px;
 }
 
 .Technoblock {
-    flex-basis: 94px;
+    flex-basis: 92px;
+    font-size: 13px;
 }
 
 .SpecProject {
-    flex-basis: 115px;
+    flex-basis: 116px;
+    font-size: 13.5px;
 }
 
 .Kyrgyz {
     flex-basis: 90px;
+    font-size: 13px;
 }
 
 .English {
