@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 7</title>
-    <link rel="stylesheet" href="grid4.css" class="style" />
+    <link rel="stylesheet" href="grid2b.css" class="style" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -15,10 +16,40 @@
         style='position: absolute; top: 0; left: 0; z-index: -1' />
     <div class="container">
         <div class="Logo">
-            <img src="image/Logo.jpg" alt="24KG Logo" class="logo-img" />
+            <div class="top-bar">
+                <div class="imgContainer">
+                    <img src="image/Logo.jpg" alt="24KG Logo" class="logo-img" />
+                </div>
+                <div class="SideLogos">
+                    <span class="KYR">КЫР</span>
+                    <span class="ENG">ENG</span>
+                    <span class="ARCHIVE">АРХИВ</span>
+                    <span class="NASHIUSLUGI">НАШИ УСЛУГИ</span>
+                </div>
+                <div class="searchBar">
+                    <input type="text" placeholder="Поиск" class="searchInput" />
+                    <button class="searchButton">
+                        <i class="fa fa-search" style="pointer-events: none;"></i>
+                    </button>
+                </div>
+                <div class="SideSearchBars">
+                    <span class="Date">15 ноября.<span>Вторник</span></span>
+                    <span class="Time">Бишкекское время<span>16:39</span></span>
+                </div>
+                <div class="MoneyRate">
+                    <span class="USD">USD</span>
+                    <span class="EUR">EUR</span>
+                    <span class="RUB">RUB</span>
+                </div>
+                <div class="MoneyRateValues">
+                    <span>84.38</span>
+                    <span>87.29</span>
+                    <span class="RUBVALUE">1.39</span>
+                </div>
+            </div>
         </div>
         <div class="Menu">
-            <ul>
+            <ul class="nav">
                 <li class="Vlast">Власть</li>
                 <li class="Obshestvo">Общество</li>
                 <li class="Ekonomika">Экономика</li>
@@ -32,25 +63,72 @@
                 <li class="Business">Бизнес</li>
             </ul>
         </div>
-        <div class="box3">3</div>
+        <div class="box3">
+            <img class="Adv1" src="image/Adv1.jpg" />
+        </div>
         <div class="Hero">
             <div class="Hero">
                 <h1>Тариф на проезд в Бишкеке пока поднимать не будут</h1>
             </div>
         </div>
-        <div class="box6">6</div>
+        <div class="box6" style="gap: 0.5px">
+            <div class="miniTopBar">
+                <p>НОВОСТИ</p>
+                <div class="buttons">
+                    <div class="miniButton1">
+                        <h2>КЫРГЫЗЧА</h2>
+                    </div>
+                    <div class="miniButton2" style="flex-grow: 1;">
+                        <h2>NEWS BRIEF</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="miniBody">
+                <p>15 ноября, вторник</p>
+                <div>
+                    <div style="display: flex; gap: 15px; padding-top: 15px;">
+                        <span style="font-size: 13px; padding-top: 5px;">16:21</span>
+                        <p style="font-size: 14.9px;flex-basis: 450px; line-height: 1.7;">
+                            Депутат рассказал, когда парламент ратифицирует соглашение по Кемпир-Абаду</p>
+                    </div>
+                </div>
+                <div>
+                    <div style="display: flex; gap: 15px; padding-top: 16px;">
+                        <span style="font-size: 13px; padding-top: 5px;">16:15</span>
+                        <p style="font-size: 14.9px;flex-basis: 450px; line-height: 1.7;">
+                            Задержание правозащитников. Депутат навестил в УВД Азизу Абдирасулову</p>
+                    </div>
+                </div>
+                <div>
+                    <div style="display: flex; gap: 15px; padding-top: 16px;">
+                        <span style="font-size: 13px; padding-top: 5px;">15:58</span>
+                        <p style="font-size: 14.9px;flex-basis: 500px; line-height: 1.7;">
+                            Восстановление Баткена.Депутат предложил Байсалову месяц пожить в регионе</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="box7">7</div>
         <div class="box8">8</div>
-        <div class="box9">9</div>
-        <div class="box4">4</div>
+        <div class="box9">
+            <div class="FirstRepItem">
+                <img src="image/RepItem1.jpg" alt="Image" class="RepItem1" />
+                <p class="RepItemText1">Итоги октября. Инфляция снова ускорилась,а рост ВВП замедляется</p>
+            </div>
+            <div class="SecondRepItem">
+                <img src="image/RepItem2.jpg" alt="Image2" class="RepItem2" />
+                <p class="RepItemText1">Почему вы отказываетесь делать прививку от вируса папилломы человека? Опрос</p>
+            </div>
+        </div>
+        <div class="box4"><img class="Adv2" src="image/Adv2.jpg" /></div>
     </div>
     <script>
         function switchStyle() {
             let style = document.querySelector('.style');
-            if (style.getAttribute('href') == 'grid4.css') {
-                style.setAttribute('href', 'grid2b.css');
+            if (style.getAttribute('href') == 'grid2b.css') {
+                style.setAttribute('href', 'grid5.css');
             } else {
-                style.setAttribute('href', 'grid4.css');
+                style.setAttribute('href', 'grid2b.css');
             }
         }
     </script>

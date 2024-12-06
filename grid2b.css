@@ -4,39 +4,23 @@
     box-sizing: border-box;
 }
 
-.Logo>img:nth-of-type(1) {
-    display: none;
-}
-
 body {
     background-repeat: no-repeat;
     font-size: 2rem;
 }
 
-.container {
-    display: grid;
-    grid-template-rows:
-        minmax(112px, auto) minmax(36px, auto) minmax(132px, auto) minmax(83px, auto) minmax(469px, auto) minmax(458px, auto) minmax(290px, auto);
-    grid-template-columns:
-        minmax(20px, 642px) minmax(20px, 290px) minmax(20px, 349px);
-    grid-template-areas:
-        "one one one"
-        "two two two"
-        "three three three"
-        "four four four"
-        "five five eight"
-        "six nine nine"
-        "seven seven seven";
+body>img {
+    opacity: 0;
 }
 
-ul {
-    border-radius: 10px;
+.nav {
+    border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    /* background-color: #00587a; */
+    background-color: #00587a;
     align-items: center;
-    font-family: "Tahoma";
+    font-family: "sans-serif", "Tahoma", "Verdana";
     font-size: 14px;
     font-weight: bold;
     color: white;
@@ -45,21 +29,138 @@ ul {
     margin: 0 auto;
 }
 
-@media (max-width: 500px) {
-    .container {
-        grid-template-columns: 100%;
-        grid-template-areas:
-            "one"
-            "two"
-            "three"
-            "four"
-            "five"
-            "six";
-    }
-}
 
 .Logo {
+    display: flex;
     grid-area: one;
+    justify-content: center;
+}
+
+.top-bar {
+    /* background-color: linen; */
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    flex-basis: 1145px;
+}
+
+.imgContainer {
+    flex-basis: 222px;
+}
+
+.logo-img {
+    max-height: 85px;
+    opacity: 1;
+}
+
+.SideLogos {
+    margin-top: 17px;
+    flex-basis: 169px;
+    max-height: 60px;
+    display: flex;
+    color: #00587a;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.NASHIUSLUGI {
+    margin-bottom: 27px;
+    font-size: 11px;
+}
+
+.searchBar {
+    margin-top: 22px;
+    margin-left: 1px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 487px;
+    height: 33px;
+}
+
+.searchInput {
+    width: 458px;
+    height: 33px;
+    padding: 0 12px;
+    border: 1px solid #00587a;
+    border-radius: 2px;
+    font-size: 15px;
+    padding-left: 37px;
+}
+
+.searchButton {
+    position: absolute;
+    left: 14px;
+    background: none;
+    border: none;
+    color: #00587a;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.SideSearchBars {
+    margin-left: 1px;
+    margin-bottom: 6.5px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 196px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 11.5px;
+    align-items: center;
+    gap: 5px;
+}
+
+.Date>span {
+    margin-left: 1px;
+}
+
+.Time>span {
+    margin-left: 2px;
+}
+
+.MoneyRate {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 9px;
+    max-width: 30px;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.RUB {
+    margin-top: 1px;
+}
+
+.EUR {
+    margin-top: 1px;
+}
+
+.USD {
+    margin-top: 0px
+}
+
+.RUBVALUE {
+    margin-left: 6px;
+}
+
+.MoneyRateValues {
+    margin-left: 6px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 9px;
+    max-width: 30px;
+    font-size: 12px;
+    font-family: sans-serif;
 }
 
 
@@ -69,23 +170,33 @@ ul {
 
 .box3 {
     grid-area: three;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box4 {
     grid-area: four;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Hero {
     grid-area: five;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 15px;
     color: white;
-    font-size: 40px;
+    align-items: end;
+    justify-content: center;
 }
 
 .box6 {
     grid-area: six;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    font-family: Arial;
 }
 
 .box7 {
@@ -98,11 +209,106 @@ ul {
 
 .box9 {
     grid-area: nine;
+    display: flex;
 }
 
-.box10 {
+.FirstRepItem {
+    flex-basis: 220px;
+}
+
+.RepItem1,
+.RepItem2 {
+    padding-top: 30px;
+    padding-left: 9px;
+    max-width: 275px;
+    max-height: 236px;
+}
+
+.RepItemText1 {
+    margin-left: 11px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    flex-basis: 300px;
+    line-height: 1.6;
+}
+
+.SecondRepItem {
+    flex-basis: 220px;
+    margin-left: 19px;
+}
+
+.RepItem2 .box10 {
     grid-area: ten;
 }
+
+.miniTopBar {
+    margin-top: 31px;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 555px;
+    margin-right: 15.5px;
+    max-height: 43px;
+    border-bottom: 3px solid #d0dbe5;
+}
+
+
+.miniTopBar>p {
+    margin-top: 9px;
+    font-size: 17px;
+    font-weight: normal;
+    font-family: 'Arial';
+}
+
+.buttons {
+    flex-basis: 176px;
+    display: flex;
+    gap: 5px;
+    justify-content: start;
+}
+
+.miniButton1,
+.miniButton2 {
+    justify-content: center;
+    flex-basis: 82px;
+    color: white;
+    border-radius: 3px;
+    font-family: 'Arial';
+    font-weight: normal;
+    display: flex;
+    max-height: 30px;
+    font-size: 7.5px;
+    align-items: center;
+    background-color: #00587a;
+}
+
+.miniBody {
+    opacity: 0.5;
+    flex-basis: 555px;
+    margin-right: 15.5px;
+    height: 229px;
+    border-top: 2px solid #d0dbe5;
+}
+
+.miniBody>p {
+    padding-top: 21px;
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.Adv1 {
+    margin-top: 3px;
+    width: 1143px;
+    height: 83px;
+}
+
+.Adv2 {
+    margin-bottom: 3px;
+    width: 1143px;
+    height: 83px;
+}
+
 
 .container>* {
     border: 2px dashed red;
@@ -166,4 +372,33 @@ ul {
     flex-basis: 20px;
     font-size: 13.2px;
     margin-bottom: 0.4px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows:
+        minmax(112px, auto) minmax(36px, auto) minmax(132px, auto) minmax(83px, auto) minmax(600px, auto) minmax(323px, auto) minmax(290px, auto);
+    grid-template-columns:
+        minmax(20px, 642px) minmax(20px, 290px) minmax(20px, 349px);
+    grid-template-areas:
+        "one one one"
+        "two two two"
+        "three three three"
+        "four four four"
+        "five five eight"
+        "six nine nine"
+        "seven seven seven";
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six";
+    }
 }

@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    font-size: 2rem;
+    opacity: 1;
+}
+
+body>img:nth-of-type(1) {
+    display: none;
+}
+
+.container {
+    display: grid;
+    /* gap: 20px; */
+    grid-template-rows:
+        minmax(112px, auto) minmax(34px, auto) minmax(132px, auto) minmax(83px, auto) minmax(469px, auto) minmax(458px, auto) minmax(290px, auto);
+    grid-template-columns:
+        minmax(20px, 200px) minmax(20px, 511px) minmax(20px, 570px);
+    grid-template-areas:
+        "one one one"
+        "two five five"
+        "two five five"
+        "three three eight"
+        "four four eight"
+        "six nine nine"
+        "seven seven seven";
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    background-color: #00587a;
+    flex-direction: column;
+    font-family: "sans-serif", "Tahoma", "Verdana";
+    font-size: 16px;
+    font-weight: bold;
+    gap: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six";
+    }
+}
+
+.Logo {
+    grid-area: one;
+    display: flex;
+    justify-content: center;
+}
+
+.top-bar {
+    /* background-color: linen; */
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    flex-basis: 1145px;
+}
+
+.imgContainer {
+    flex-basis: 222px;
+}
+
+.logo-img {
+    max-height: 85px;
+    opacity: 1;
+}
+
+.SideLogos {
+    margin-top: 17px;
+    flex-basis: 169px;
+    max-height: 60px;
+    display: flex;
+    color: #00587a;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.NASHIUSLUGI {
+    margin-bottom: 27px;
+    font-size: 11px;
+}
+
+.searchBar {
+    margin-top: 22px;
+    margin-left: 1px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 487px;
+    height: 33px;
+}
+
+.searchInput {
+    width: 458px;
+    height: 33px;
+    padding: 0 12px;
+    border: 1px solid #00587a;
+    border-radius: 2px;
+    font-size: 15px;
+    padding-left: 37px;
+}
+
+.searchButton {
+    position: absolute;
+    left: 14px;
+    background: none;
+    border: none;
+    color: #00587a;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.searchButton i {
+    pointer-events: none;
+}
+
+
+.SideSearchBars {
+    margin-bottom: 7px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 197px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 11.5px;
+    align-items: center;
+    gap: 5px;
+}
+
+.MoneyRate {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 9px;
+    max-width: 30px;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.RUB {
+    margin-top: 1px;
+}
+
+.EUR {
+    margin-top: 1px;
+}
+
+.USD {
+    margin-top: 0px
+}
+
+.RUBVALUE {
+    margin-left: 6px;
+}
+
+.MoneyRateValues {
+    margin-left: 6px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 9px;
+    max-width: 30px;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+
+.Menu {
+    grid-area: two;
+}
+
+.box3 {
+    grid-area: three;
+}
+
+.box4 {
+    grid-area: four;
+}
+
+.Hero {
+    grid-area: five;
+    background-repeat: no-repeat;
+    background-image: url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg");
+    max-width: 1081px;
+    max-height: fit-content;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.box6 {
+    grid-area: six;
+}
+
+.box7 {
+    grid-area: seven;
+}
+
+.box8 {
+    grid-area: eight;
+}
+
+.box9 {
+    grid-area: nine;
+}
+
+.box10 {
+    grid-area: ten;
+}
+
+.container>* {
+    border: 2px dashed blue;
+}
+
+li {
+    border-bottom: 1px solid white;
+}
