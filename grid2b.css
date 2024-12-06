@@ -10,7 +10,7 @@ body {
 }
 
 body>img {
-    opacity: 0;
+    opacity: 0.5;
 }
 
 .nav {
@@ -196,7 +196,7 @@ body>img {
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
-    font-family: Arial;
+    font-family: 'PT Sans';
 }
 
 .box7 {
@@ -205,6 +205,15 @@ body>img {
 
 .box8 {
     grid-area: eight;
+    display: flex;
+    justify-content: start;
+}
+
+.box8>img {
+    padding-top: 17px;
+    padding-left: 14px;
+    max-width: 280px;
+    max-height: 463px;
 }
 
 .box9 {
@@ -238,73 +247,91 @@ body>img {
     margin-left: 19px;
 }
 
-.RepItem2 .box10 {
-    grid-area: ten;
-}
 
 .miniTopBar {
     margin-top: 31px;
     display: flex;
     justify-content: space-between;
     flex-basis: 555px;
-    margin-right: 15.5px;
+    margin-right: 16px;
     max-height: 43px;
-    border-bottom: 3px solid #d0dbe5;
+    /* border-bottom: 3px solid #d0dbe5; */
 }
 
 
 .miniTopBar>p {
-    margin-top: 9px;
-    font-size: 17px;
+    margin-top: 8px;
+    font-size: 18px;
     font-weight: normal;
-    font-family: 'Arial';
+    font-family: 'Tahoma';
 }
 
 .buttons {
     flex-basis: 176px;
     display: flex;
-    gap: 5px;
+    gap: 6px;
     justify-content: start;
 }
 
 .miniButton1,
 .miniButton2 {
+    margin-top: 2px;
     justify-content: center;
     flex-basis: 82px;
     color: white;
     border-radius: 3px;
     font-family: 'Arial';
-    font-weight: normal;
+    font-weight: bold;
     display: flex;
-    max-height: 30px;
+    max-height: 29px;
     font-size: 7.5px;
     align-items: center;
     background-color: #00587a;
 }
 
 .miniBody {
-    opacity: 0.5;
     flex-basis: 555px;
-    margin-right: 15.5px;
+    margin-right: 16px;
     height: 229px;
-    border-top: 2px solid #d0dbe5;
+    /* border-top: 2px solid #d0dbe5; */
 }
 
 .miniBody>p {
-    padding-top: 21px;
+    padding-top: 22px;
+    padding-left: 1px;
     font-size: 15px;
-    font-family: Arial;
+    font-family: 'Tahoma';
+    font-weight: normal;
+}
+
+.contents {
     font-weight: bold;
+    margin-top: 16px;
+    margin-left: 4px;
+    gap: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
 }
 
-.Adv1 {
-    margin-top: 3px;
-    width: 1143px;
-    height: 83px;
+.content1,
+.content2,
+.content3 {
+    display: flex;
+    gap: 12px;
+    /* background-color: aquamarine; */
+    flex-basis: 600px;
+    line-height: 1.5;
 }
 
+.contents span {
+    margin-top: 2px;
+    font-size: 13px;
+}
+
+.Adv1,
 .Adv2 {
-    margin-bottom: 3px;
+    margin-top: 3px;
     width: 1143px;
     height: 83px;
 }
