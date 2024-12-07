@@ -6,13 +6,16 @@
 
 body {
     background-repeat: no-repeat;
-    font-size: 2rem;
     font-family: "PT Sans";
     font-style: normal;
 }
 
 body>img {
     opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .Menu {
@@ -317,14 +320,14 @@ body>img {
     flex-basis: 500px;
 }
 
+.Deputat {
+    padding-left: 4px;
+}
+
 .content3 {
     display: flex;
     gap: 16px;
     flex-basis: 550px;
-}
-
-.content2>span {
-    padding-left: 3px;
 }
 
 .timePoint {
@@ -360,7 +363,7 @@ body>img {
 }
 
 .Agent {
-    flex-basis: 70px;
+    flex-basis: 80px;
 }
 
 .Sport {
