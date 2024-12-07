@@ -36,9 +36,9 @@ body>img:nth-of-type(1) {
     list-style-type: none;
     background-color: #00587a;
     flex-direction: column;
-    font-family: "sans-serif", "Tahoma", "Verdana";
+    font-family: "PT Sans";
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
     gap: 20px;
     padding: 10px;
     text-transform: uppercase;
