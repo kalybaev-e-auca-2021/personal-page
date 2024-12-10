@@ -77,13 +77,43 @@ body>img {
 }
 
 .searchBar {
-    margin-top: 22px;
+    flex-wrap: wrap;
     margin-left: 20px;
+    margin-bottom: 42px;
     display: flex;
     align-items: center;
     position: relative;
     width: 487px;
     height: 33px;
+    gap: 15px;
+}
+
+.icons {
+    display: flex;
+}
+
+.fa-facebook {
+    width: 20px;
+}
+
+.fa-twitter {
+    width: 26px;
+}
+
+.fa-youtube {
+    width: 30px;
+}
+
+.fa-odnoklassniki {
+    width: 22px;
+}
+
+.fa-instagram {
+    width: 26px;
+}
+
+.fa-telegram {
+    width: 27px;
 }
 
 .searchInput {
@@ -183,15 +213,55 @@ body>img {
     justify-content: center;
 }
 
-.box6 {
+.NEWS {
     grid-area: six;
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
 }
 
-.box7 {
+.footer {
     grid-area: seven;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.footerTopBar {
+    margin-top: 29px;
+    display: flex;
+    justify-content: center;
+    min-width: 1140px;
+    min-height: 49px;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 700;
+    gap: 20px;
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+.footerTopBar>* {
+    height: 20px;
+    border-bottom: 1px solid white;
+}
+
+.footerBody {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-basis: 1140px;
+    color: white;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.firstPart {}
+
+.firstPart>img {
+    max-width: 184px;
+    max-height: fit-content;
 }
 
 .box8 {
@@ -320,8 +390,8 @@ body>img {
     flex-basis: 500px;
 }
 
-.Deputat {
-    padding-left: 4px;
+.content2 {
+    padding-left: 2px;
 }
 
 .content3 {
@@ -413,4 +483,26 @@ body>img {
             "five"
             "six";
     }
+}
+
+
+.Ekonomika2 {
+    padding-left: 2px;
+}
+
+.Proisshestivya2 {
+    padding-left: 1px;
+}
+
+.Agent2 {
+    padding-left: 2px;
+}
+
+.Sport2 {
+    padding-left: 1px;
+}
+
+
+.Kyrgyz2 {
+    padding-left: 1px;
 }
