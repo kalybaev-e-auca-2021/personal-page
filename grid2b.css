@@ -216,7 +216,6 @@ body>img {
 
 .mainPic {
     position: relative;
-    opacity: 0.8;
     margin-left: 50px;
     padding-left: 18px;
 }
@@ -232,13 +231,19 @@ body>img {
     line-height: 35px;
 }
 
+.text-container2>* {
+    flex-basis: 240px;
+}
+
 .text-container2 {
-    background-color: black;
+    opacity: 0.8;
     display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: black;
     min-width: 265px;
     min-height: 445px;
     flex-wrap: wrap;
-    gap: 10px;
     position: absolute;
     left: 734px;
     top: 222px;
@@ -246,7 +251,6 @@ body>img {
     font-weight: 400;
     transform: translate(-50%, -50%);
     color: white;
-
 }
 
 .mainPic>img {
