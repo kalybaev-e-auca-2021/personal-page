@@ -211,18 +211,20 @@ body>img {
     display: flex;
     flex-wrap: wrap;
     gap: 38px;
-    align-items: end;
+    align-items: start;
+    justify-content: center;
 }
 
 .mainPic {
     position: relative;
-    margin-left: 50px;
-    padding-left: 18px;
+    padding-left: 40px;
+    margin-left: 15px;
+    margin-top: 22px;
 }
 
 .text-container {
     position: absolute;
-    left: 317px;
+    left: 330px;
     top: 86%;
     transform: translate(-50%, -50%);
     color: white;
@@ -233,22 +235,22 @@ body>img {
 
 .text-container2>* {
     flex-basis: 240px;
+    font-size: 16px;
+    font-weight: 400;
 }
+
 
 .text-container2 {
     opacity: 0.8;
     display: flex;
-    justify-content: start;
-    align-items: center;
+    flex-wrap: wrap;
     background-color: black;
     min-width: 265px;
     min-height: 445px;
     flex-wrap: wrap;
     position: absolute;
-    left: 734px;
+    left: 756px;
     top: 222px;
-    font-size: 16px;
-    font-weight: 400;
     transform: translate(-50%, -50%);
     color: white;
 }
@@ -259,19 +261,14 @@ body>img {
 }
 
 .NEWS {
+    margin-top: 5px;
+    margin-right: 2px;
     grid-area: six;
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
 }
 
-.Hero>img {
-    max-width: 1158px;
-    max-height: 100px;
-    margin-left: 50px;
-    padding-left: 18px;
-    margin-bottom: 10px;
-}
 
 .footer {
     background-color: #00587a;
@@ -328,20 +325,32 @@ body>img {
 .box8 {
     grid-area: eight;
     display: flex;
-    justify-content: start;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: end;
 }
 
-.box8>img {
-    padding-top: 17px;
-    padding-left: 14px;
-    max-width: 280px;
-    max-height: 463px;
+.crossBanner {
+    min-width: 1162px;
+    max-height: 80px;
+    margin-right: 50px;
+    padding-right: 20px;
+}
+
+.Adv3 {
+    padding-top: 22px;
+    margin-right: 50px;
+    padding-right: 21px;
+    max-width: 300px;
+    max-height: 467px;
 }
 
 .box9 {
     grid-area: nine;
     display: flex;
     font-size: 16px;
+    margin-top: 5px;
+    margin-right: 2px;
 }
 
 .FirstRepItem {
@@ -468,10 +477,6 @@ body>img {
     height: 83px;
 }
 
-
-.container>* {
-    border: 2px dashed red;
-}
 
 .Vlast {
     flex-basis: 48px;
