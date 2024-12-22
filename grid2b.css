@@ -43,19 +43,15 @@ body>img {
 
 .Logo {
     display: flex;
+    align-items: center;
+    flex-basis: 1145px;
+    padding-top: 11px;
     grid-area: one;
     justify-content: center;
 }
 
-.top-bar {
-    display: flex;
-    align-items: center;
-    flex-basis: 1145px;
-    padding-top: 12px;
-}
-
 .imgContainer {
-    flex-basis: 222px;
+    flex-basis: 215px;
 }
 
 .logo-img {
@@ -73,13 +69,13 @@ body>img {
     font-weight: 700;
     flex-wrap: wrap;
     line-height: 12px;
-    gap: 10px;
+    gap: 9px;
 }
 
 .searchBar {
     flex-wrap: wrap;
-    margin-left: 20px;
-    margin-bottom: 42px;
+    margin-left: 18px;
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
     width: 487px;
@@ -92,11 +88,11 @@ body>img {
 }
 
 .fa-facebook {
-    width: 20px;
+    width: 23px;
 }
 
 .fa-twitter {
-    width: 26px;
+    width: 27px;
 }
 
 .fa-youtube {
@@ -116,7 +112,6 @@ body>img {
 }
 
 .searchInput {
-    position: relative;
     width: 458px;
     height: 33px;
     padding: 0 12px;
@@ -124,20 +119,6 @@ body>img {
     border-radius: 2px;
     font-size: 15px;
     padding-left: 37px;
-}
-
-.searchButton {
-    position: absolute;
-    left: 481px;
-    top: 74px;
-    transform: translate(-50%, -50%);
-    background: none;
-    border: none;
-    color: #00587a;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
 }
 
 .SideSearchBars {
@@ -163,10 +144,11 @@ body>img {
 
 .MoneyRate {
     display: flex;
+    margin-left: 2px;
     gap: 4px;
     flex-wrap: wrap;
     margin-bottom: 9px;
-    max-width: 30px;
+    max-width: 35px;
     font-size: 13px;
     font-weight: 700;
     flex-basis: 100px;
@@ -177,7 +159,6 @@ body>img {
 }
 
 .MoneyRateValues {
-    margin-left: 5px;
     display: flex;
     gap: 4px;
     flex-wrap: wrap;
@@ -358,6 +339,11 @@ body>img {
     line-height: 22px;
 }
 
+.ThirdRepItem,
+.FourthRepItem {
+    display: none;
+}
+
 .RepItem1,
 .RepItem2 {
     padding-top: 30px;
@@ -473,8 +459,8 @@ body>img {
 .Adv1,
 .Adv2 {
     margin-top: 3px;
-    width: 1143px;
-    height: 83px;
+    max-width: 1143px;
+    max-height: 83px;
 }
 
 
