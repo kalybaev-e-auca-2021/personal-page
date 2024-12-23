@@ -439,6 +439,10 @@ body>img {
     line-height: 24px;
 }
 
+.buttonMenu {
+    display: none;
+}
+
 .content1,
 .content2 {
     display: flex;
