@@ -10,6 +10,11 @@ body {
     opacity: 1;
 }
 
+.buttonMenu {
+    display: none;
+}
+
+
 body>img:nth-of-type(1) {
     display: none;
     position: absolute;
@@ -19,6 +24,7 @@ body>img:nth-of-type(1) {
 }
 
 .container {
+    position: relative;
     display: grid;
     grid-template-rows:
         minmax(112px, auto) minmax(80px, auto) minmax(132px, auto) minmax(83px, auto) minmax(90px, auto) minmax(90px, auto) minmax(290px, auto);
@@ -41,7 +47,6 @@ body>img:nth-of-type(1) {
         grid-template-rows: auto;
         grid-template-areas:
             "one"
-            "two"
             "eight"
             "six"
             "nine"
@@ -51,10 +56,33 @@ body>img:nth-of-type(1) {
             "seven";
     }
 
+    .buttonMenu {
+        display: block;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+    }
+
     .container>* {
         min-height: auto;
         /*TODO: change to auto */
     }
+
+    .Menu {
+        display: none;
+    }
+
+    .Menu.mobileMenu {
+        width: 150px;
+        display: block;
+        position: fixed;
+        top: 20px;
+        /* fix the element 0px from top of browser window */
+        left: 0;
+        /* fix the element 0px from right of browser window */
+    }
+
+
 }
 
 .Logo {
