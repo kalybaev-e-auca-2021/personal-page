@@ -24,6 +24,7 @@ body>img:nth-of-type(1) {
 }
 
 .container {
+    gap: 15px;
     position: relative;
     display: grid;
     grid-template-rows:
@@ -61,11 +62,11 @@ body>img:nth-of-type(1) {
         position: fixed;
         top: 0px;
         left: 0px;
+        max-height: 30px;
     }
 
     .container>* {
         min-height: auto;
-        /*TODO: change to auto */
     }
 
     .Menu {
@@ -76,10 +77,8 @@ body>img:nth-of-type(1) {
         width: 150px;
         display: block;
         position: fixed;
-        top: 20px;
-        /* fix the element 0px from top of browser window */
+        top: 30px;
         left: 0;
-        /* fix the element 0px from right of browser window */
     }
 
 
@@ -436,9 +435,4 @@ body>img:nth-of-type(1) {
 .FourthRepItem {
     flex-basis: 300px;
     line-height: 22px;
-}
-
-
-.container>* {
-    border: 2px dashed blue;
 }
