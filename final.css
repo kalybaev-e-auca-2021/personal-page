@@ -224,16 +224,97 @@ body>img:nth-of-type(1) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 38px;
+}
+
+.mainPicture {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .NEWS {
+    margin-right: 2px;
     grid-area: six;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
+.miniTopBar {
+    margin-top: 31px;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 955px;
+    max-height: 43px;
+    border-bottom: 3px solid #d0dbe5;
+}
+
+
+.miniTopBar>p {
+    max-height: 25px;
+    font-size: 19px;
+    font-weight: 700;
+    font-stretch: condensed;
+}
+
+.buttons {
+    display: flex;
+    flex-basis: 176px;
+    gap: 6px;
+    justify-content: start;
+}
+
+.miniButton1,
+.miniButton2 {
+    justify-content: center;
+    flex-basis: 82px;
+    color: white;
+    border-radius: 3px;
+    font-weight: 400;
+    display: flex;
+    max-height: 25px;
+    font-size: 9px;
+    align-items: center;
+    background-color: #00587a;
+    font-stretch: condensed;
+}
+
+.miniBody {
+    flex-basis: 955px;
+    max-height: 229px;
+}
+
+.miniBody>p {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.contents {
+    gap: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.content1,
+.content2 {
+    display: flex;
+    gap: 16px;
+    flex-basis: 950px;
+}
+
+.content3 {
+    display: flex;
+    gap: 16px;
+    flex-basis: 950px;
+}
+
+.timePoint {
+    font-size: 13px;
+}
 
 .footer {
     grid-area: seven;
